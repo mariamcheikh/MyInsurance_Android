@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="esprit.tn.assuranceapp"
+    >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MEDIA_CONTENT_CONTROL" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/logo" />
+        <!--
+             Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+        <!-- [START firebase_service] -->
+
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!-- <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" /> -->
+
+
+        <!-- *********ACTIVITIES********* -->
+
+        <activity android:name=".AffecterDepannageActivity" />
+        <activity android:name=".RateActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activities.ProfileActivityy"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".RegisterUser"
+            android:screenOrientation="portrait"
+            />
+        <!-- <activity android:name=".Activities.Constat.ConstatActivity" /> -->
+        <activity android:name=".Activities.Constat.CaptureSignature"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activities.Constat.SignActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <activity android:name=".Activities.CameraActivity"
+            android:screenOrientation="portrait"/>
+        <!-- <activity android:name=".Activities.Contrat.ContratActivity" /> -->
+        <activity android:name=".Activities.Constat.DisplayConstatAdminActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activities.Constat.DisplayConstatUserActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activities.Contrat.DisplayContratUserActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activities.Contrat.DisplayContratAdminActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activities.Constat.ConstatActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activities.Contrat.ContratActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activities.Constat.AccidentImageActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".HorizontalNtbActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".UserAccueil"
+            android:label="@string/title_activity_user_accueil"></activity>
+        <activity
+            android:name=".AdminAccueil1"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

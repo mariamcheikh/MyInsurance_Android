@@ -1,0 +1,570 @@
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="esprit.tn.assuranceapp.Fragments.Constat.ConstatVoitureBFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.22"
+                    android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                    android:text="CIRCUMSTANCES OF Vehicle A"
+                    android:gravity="center"
+                    android:textColor="#ffffffff"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                    android:gravity="center"
+                    android:text="Put a cross(x) in each of the boxes useful to specify the sketch"
+                    android:textColor="#ffffffff"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                        android:gravity="left"
+                        android:text="in parking "
+                        android:textColor="#ffffffff" />
+
+                    <CheckBox
+                        android:id="@+id/stationnementA"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="#ffffffff"
+                        android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                        android:gravity="left" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                        android:gravity="left"
+                        android:text="leaving a parking lot: "
+                        android:textColor="#ffffffff" />
+
+                    <CheckBox
+                        android:id="@+id/quiterstationnementA"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="#ffffffff"
+                        android:fontFamily="@string/fcm_fallback_notification_channel_label"
+
+                        android:gravity="left"
+                        android:textColor="#ffffffff" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                        android:gravity="left"
+                        android:text=" taking a parking lot "
+                        android:textColor="#ffffffff" />
+
+                    <CheckBox
+                        android:id="@+id/prenantstationnementA"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="#ffffffff"
+                        android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                        android:gravity="left"
+                        android:textColor="#ffffffff" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                        android:gravity="left"
+                        android:text="leaving a parking lot,a private place, a dirt road"
+                        android:textColor="#ffffffff" />
+
+                    <CheckBox
+                        android:id="@+id/sortantParkingA"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="#ffffffff"
+                        android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                        android:gravity="left"
+
+                        android:textColor="#ffffffff" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                        android:gravity="left"
+                        android:text="engaged in a parking lot, a private or dirt road"
+                        android:textColor="#ffffffff" />
+
+                    <CheckBox
+                        android:id="@+id/engagerparkingA"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="#ffffffff"
+                        android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                        android:gravity="left"
+
+                        android:textColor="#ffffffff" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                        android:gravity="left"
+                        android:text="traffic stop "
+                        android:textColor="#ffffffff" />
+
+                    <CheckBox
+                        android:id="@+id/arretcirculationA"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="#ffffffff"
+                        android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                        android:gravity="left"
+
+                        android:textColor="#ffffffff" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                        android:gravity="left"
+                        android:text="friction without changing the file: "
+                        android:textColor="#ffffffff" />
+
+                    <CheckBox
+                        android:id="@+id/frottementA"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="#ffffffff"
+                        android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                        android:gravity="left"
+                        android:textColor="#ffffffff" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                        android:gravity="left"
+                        android:text="hitting in the back, rolling in the same direction"
+                        android:textColor="#ffffffff" />
+
+                    <CheckBox
+                        android:id="@+id/heurtaitarriereA"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="#ffffffff"
+                        android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                        android:gravity="left"
+                        android:textColor="#ffffffff" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                        android:gravity="left"
+                        android:text="drove in the same direction and on a different line"
+                        android:textColor="#ffffffff" />
+
+                    <CheckBox
+                        android:id="@+id/roulermemesensA"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="#ffffffff"
+                        android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                        android:gravity="left"
+                        android:textColor="#ffffffff" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                        android:gravity="left"
+                        android:text="changed lanes"
+                        android:textColor="#ffffffff" />
+
+                    <CheckBox
+                        android:id="@+id/changementfileA"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="#ffffffff"
+                        android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                        android:gravity="left"
+                        android:textColor="#ffffffff" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                        android:gravity="left"
+                        android:text="passing "
+                        android:textColor="#ffffffff" />
+
+                    <CheckBox
+                        android:id="@+id/doublaitA"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="#ffffffff"
+                        android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                        android:gravity="left"
+                        android:textColor="#ffffffff" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                        android:gravity="left"
+                        android:text="turned right "
+                        android:textColor="#ffffffff" />
+
+                    <CheckBox
+                        android:id="@+id/viraitdroiteA"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="#ffffffff"
+                        android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                        android:gravity="left"
+                        android:textColor="#ffffffff" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                        android:gravity="left"
+                        android:text="turned left "
+                        android:textColor="#ffffffff" />
+
+                    <CheckBox
+                        android:id="@+id/viraitgaucheA"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="#ffffffff"
+                        android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                        android:gravity="left"
+                        android:textColor="#ffffffff" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                        android:gravity="left"
+                        android:text="moving back "
+                        android:textColor="#ffffffff" />
+
+                    <CheckBox
+                        android:id="@+id/reculaitA"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="#ffffffff"
+                        android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                        android:gravity="left"
+                        android:textColor="#ffffffff" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                        android:gravity="left"
+                        android:text="encroached on the portion of pavement reserved for traffic in the opposite direction"
+                        android:textColor="#ffffffff" />
+
+                    <CheckBox
+                        android:id="@+id/chausseA"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="#ffffffff"
+                        android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                        android:gravity="left"
+                        android:textColor="#ffffffff" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                        android:gravity="left"
+                        android:text="came from right (in a crossroads) "
+                        android:textColor="#ffffffff" />
+
+                    <CheckBox
+                        android:id="@+id/carrefourA"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="#ffffffff"
+                        android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                        android:gravity="left"
+                        android:textColor="#ffffffff" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                        android:gravity="left"
+                        android:text="had not observed the signal of priority "
+                        android:textColor="#ffffffff" />
+
+                    <CheckBox
+                        android:id="@+id/prioriteA"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="#ffffffff"
+                        android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                        android:gravity="left"
+                        android:textColor="#ffffffff" />
+
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/btnnextAA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/custom_btn"
+                    android:text="Click here to draw the sketch of accident"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+
+                    />
+
+                <Button
+                    android:id="@+id/retour"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="0.36"
+                    android:background="@drawable/custom_btn"
+                    android:text="Return"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+</ScrollView >

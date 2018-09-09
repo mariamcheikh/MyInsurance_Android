@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    android:layout_weight="10"
+    tools:context="esprit.tn.assuranceapp.Activities.CameraActivity">
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/camera"
+    android:layout_weight="9"
+    />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:id="@+id/btncamera"
+        android:text="TAKE IMAGE"
+        android:textStyle="bold"
+        android:background="@drawable/custom_btn"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="15dp"
+      />
+    <Button
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:id="@+id/addcamera"
+        android:text="SUBMIT IMAGE"
+        android:background="@drawable/custom_btn"
+        android:textColor="#ffffff"
+
+        android:layout_marginBottom="15dp"/>
+
+
+
+</LinearLayout >

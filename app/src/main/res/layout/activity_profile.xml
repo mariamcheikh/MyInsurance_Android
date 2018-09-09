@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="esprit.tn.assuranceapp.ProfileActivity"
+
+    android:background="@drawable/constat1"
+    >
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="12dp"
+        android:id="@+id/linearLayout2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                    android:textColor="#ffffffff"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:text="E-mail:"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+                <TextView
+                    android:id="@+id/textViewUsername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                    android:textColor="#ffffffff"
+                    android:textSize="15dp"
+
+                    android:text="USER NAME"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+                    android:text="Username:"
+                    android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                    android:textColor="#ffffffff"
+                    android:textSize="20dp"
+
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+                <TextView
+                    android:id="@+id/textViewEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                    android:textColor="#ffffffff"
+                    android:textSize="15dp"
+                    android:text="USER EMAIL"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Phone:"
+                    android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                    android:textColor="#ffffffff"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+                <TextView
+                    android:id="@+id/phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                    android:textColor="#ffffffff"
+                    android:textSize="15dp"
+                    android:text="Phone"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                    android:textColor="#ffffffff"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:text="First name:"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+                <TextView
+                    android:id="@+id/prenom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                    android:textColor="#ffffffff"
+                    android:textSize="15dp"
+                    android:text="USER Prenom"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Last name:"
+                    android:textStyle="bold"
+                    android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                    android:textColor="#ffffffff"
+                    android:textSize="20dp"
+
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+                <TextView
+                    android:id="@+id/nom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                    android:textColor="#ffffffff"
+                    android:textSize="15dp"
+                    android:text="USER Nom"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Identity Card Number:"
+                    android:textStyle="bold"
+                    android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                    android:textColor="#ffffffff"
+                    android:textSize="20dp"
+
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+                <TextView
+                    android:id="@+id/ncin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" USER CIN"
+                    android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                    android:textColor="#ffffffff"
+                    android:textSize="15dp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+            </TableRow>
+        </TableLayout>
+
+
+
+
+
+    <Button
+        android:id="@+id/buttonLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout2"
+
+        android:layout_gravity="center"
+        android:background="@drawable/custom_btn"
+        android:textColor="#ffffff"
+        android:textAllCaps="false"
+        android:text="Sign Out"/>
+
+
+    <Button
+        android:id="@+id/buttonConstat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonLogout"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_btn"
+        android:textColor="#ffffff"
+        android:layout_gravity="center"
+        android:text="  Accident Report  " />
+
+    <Button
+        android:id="@+id/bouttonContrat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonConstat"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_btn"
+        android:textColor="#ffffff"
+        android:layout_gravity="center"
+        android:text="  Contract  "/>
+    </LinearLayout>
+</ScrollView>
+</FrameLayout >

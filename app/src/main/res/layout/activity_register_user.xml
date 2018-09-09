@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragmentcontratContainer"
+    tools:context="esprit.tn.assuranceapp.RegisterUser"
+    android:background="@drawable/bg"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+
+
+
+        <TextView
+            android:text="Username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@string/fcm_fallback_notification_channel_label"
+            android:textColor="#ffffffff"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:id="@+id/editTextUsername"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:alpha="0.23"
+            android:background="@drawable/rounded_edittext"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="saisir votre pseudo"
+            android:textColorHint="#FFFFFF"
+            android:layout_marginTop="3dp"
+            />
+
+        <TextView
+            android:text="Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@string/fcm_fallback_notification_channel_label"
+            android:textColor="#ffffffff"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:alpha="0.23"
+            android:background="@drawable/rounded_edittext"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="saisir votre pseudo"
+            android:textColorHint="#FFFFFF"
+            android:layout_marginTop="3dp"
+            />
+
+        <TextView
+            android:text="E-mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@string/fcm_fallback_notification_channel_label"
+            android:textColor="#ffffffff"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:alpha="0.23"
+            android:background="@drawable/rounded_edittext"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="saisir votre pseudo"
+            android:textColorHint="#FFFFFF"
+            android:layout_marginTop="3dp"
+            />
+
+        <TextView
+            android:text="Lastname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@string/fcm_fallback_notification_channel_label"
+            android:textColor="#ffffffff"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            />
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:alpha="0.23"
+            android:background="@drawable/rounded_edittext"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="saisir votre pseudo"
+            android:textColorHint="#FFFFFF"
+            android:layout_marginTop="3dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@string/fcm_fallback_notification_channel_label"
+            android:text="Firstname"
+            android:textColor="#ffffffff"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            />
+
+        <EditText
+            android:id="@+id/txtPrenom"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:alpha="0.23"
+            android:background="@drawable/rounded_edittext"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="saisir votre pseudo"
+            android:textColorHint="#FFFFFF"
+            android:layout_marginTop="3dp" />
+
+        <TextView
+            android:text="Phone Number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@string/fcm_fallback_notification_channel_label"
+            android:textColor="#ffffffff"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            />
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:inputType="phone"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:alpha="0.23"
+            android:background="@drawable/rounded_edittext"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="saisir votre pseudo"
+            android:textColorHint="#FFFFFF"
+            android:layout_marginTop="3dp" />
+
+
+        <TextView
+            android:text="Identity Card Number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@string/fcm_fallback_notification_channel_label"
+            android:textColor="#ffffffff"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            />
+
+        <EditText
+            android:id="@+id/txtNcin"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:alpha="0.23"
+            android:inputType="number"
+            android:background="@drawable/rounded_edittext"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="saisir votre pseudo"
+            android:textColorHint="#FFFFFF"
+            android:layout_marginTop="3dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@string/fcm_fallback_notification_channel_label"
+            android:text="Birth date"
+            android:textColor="#ffffffff"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            />
+
+
+        <EditText
+            android:id="@+id/txtDateNaiss"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:alpha="0.23"
+            android:background="@drawable/rounded_edittext"
+            android:fontFamily="sans-serif-condensed"
+            android:textColorHint="#FFFFFF"
+            android:layout_marginTop="3dp"
+            android:clickable="true"
+            android:editable="false"
+            android:hint="cliquer pour modifier"
+            />
+
+        <Button
+            android:text="Submit"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/buttonRegister"
+            android:background="@drawable/custom_btn"
+            android:textColor="#ffffff"
+            android:layout_marginTop="20dp"
+            android:textAllCaps="false"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/LinearLayout"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/txtR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already have an account ?"
+                android:textColor="#ffffff"
+                android:layout_below="@id/LinearLayout"
+                />
+            <TextView
+                android:id="@+id/textViewLogin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:text="Login"
+                android:textColor="#01B0F0"
+                android:textSize="18dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+</ScrollView>

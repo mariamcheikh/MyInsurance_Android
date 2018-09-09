@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:background="@drawable/bg"
+android:orientation="vertical"
+    android:weightSum="1">
+
+<Button
+    android:id="@+id/getSign"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/custom_btn"
+    android:textColor="#ffffff"
+    android:layout_marginTop="20dp"
+    android:textAllCaps="false"
+    android:text="Click here to sign " />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="390dp"
+        android:layout_height="364dp"
+        android:layout_gravity="center" />
+
+    <Button
+        android:id="@+id/submitConstat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_weight="0.44"
+        android:background="@drawable/custom_btn"
+        android:text="sign"
+        android:textColor="#ffffff" />
+
+</LinearLayout>
+

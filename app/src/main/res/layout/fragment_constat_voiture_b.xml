@@ -1,0 +1,770 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="esprit.tn.assuranceapp.Fragments.Constat.ConstatVoitureBFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.00"
+                        android:gravity="center"
+                        android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                        android:text="Vehicule B"
+                        android:textColor="#ffffffff"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                        android:text="INSURANCE COMPANY: "
+                        android:textColor="#ffffffff"
+
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                            android:gravity="left"
+                            android:text="Vehicle insured by "
+                            android:textColor="#ffffffff" />
+
+                        <EditText
+                            android:id="@+id/vehiculeassure"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/photo_crop_highlight_color"
+                            android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                            android:gravity="left"
+                            android:textColor="#ffffffff" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@string/fcm_fallback_notification_channel_label"
+
+                            android:gravity="left"
+                            android:text="Insurance contract: "
+                            android:textColor="#ffffffff" />
+
+                        <EditText
+                            android:id="@+id/contratassure"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/photo_crop_highlight_color"
+                            android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                            android:gravity="left"
+                            android:textColor="#ffffffff"
+                            android:inputType="text" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Agency: "
+
+                            android:textColor="#ffffffff" />
+
+                        <EditText
+                            android:id="@+id/agence"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/photo_crop_highlight_color"
+                            android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                            android:gravity="left"
+                            android:textColor="#ffffffff"
+                            android:inputType="text" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                            android:gravity="left"
+                            android:text="Certificate valid from:"
+                            android:textColor="#ffffffff" />
+
+                        <EditText
+                            android:id="@+id/attestationdu"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:editable="false"
+                            android:backgroundTint="@color/photo_crop_highlight_color"
+                            android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                            android:gravity="left"
+                            android:textColor="#ffffffff" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                            android:gravity="left"
+                            android:text="To"
+                            android:textColor="#ffffffff" />
+
+                        <EditText
+                            android:id="@+id/attestationau"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:editable="false"
+                            android:backgroundTint="@color/photo_crop_highlight_color"
+                            android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                            android:gravity="left"
+                            android:textColor="#ffffffff" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="IDENTITY OF THE DRIVER:"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:backgroundTint="@color/photo_crop_highlight_color"
+                        android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                        android:gravity="left"
+                        android:textColor="#ffffffff"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+
+                            android:text="Lastname "
+                            android:backgroundTint="@color/photo_crop_highlight_color"
+                            android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                            android:gravity="left"
+                            android:textColor="#ffffffff"/>
+
+                        <EditText
+                            android:id="@+id/nomConducteur"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/photo_crop_highlight_color"
+                            android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                            android:gravity="left"
+                            android:textColor="#ffffffff"
+                            android:inputType="text" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/textView15"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/photo_crop_highlight_color"
+                            android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                            android:gravity="left"
+
+                            android:text="Firstname "
+                            android:textColor="#ffffffff" />
+
+                        <EditText
+                            android:id="@+id/prenomConducteur"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/photo_crop_highlight_color"
+                            android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                            android:gravity="left"
+                            android:textColor="#ffffffff"
+                            android:inputType="text" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/photo_crop_highlight_color"
+                            android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                            android:gravity="left"
+                            android:text="address "
+                            android:textColor="#ffffffff" />
+
+                        <EditText
+                            android:id="@+id/addresseConducteur"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/photo_crop_highlight_color"
+                            android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                            android:gravity="left"
+                            android:inputType="text"
+                            android:textColor="#ffffffff" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/photo_crop_highlight_color"
+                            android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                            android:gravity="left"
+                            android:textColor="#ffffffff"
+                            android:text="Driver's license number:" />
+
+                        <EditText
+                            android:id="@+id/permisConducteur"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:inputType="number"
+                            android:backgroundTint="@color/photo_crop_highlight_color"
+                            android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                            android:gravity="left"
+                            android:textColor="#ffffffff"
+                            />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+
+                            android:text="issued on"
+                            android:backgroundTint="@color/photo_crop_highlight_color"
+                            android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                            android:gravity="left"
+                            android:textColor="#ffffffff"/>
+
+                        <EditText
+                            android:id="@+id/permisdelivre"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/photo_crop_highlight_color"
+                            android:editable="false"
+                            android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                            android:gravity="left"
+                            android:textColor="#ffffffff" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="INSURED (see insurance certificate)"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:backgroundTint="@color/photo_crop_highlight_color"
+                        android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                        android:gravity="left"
+                        android:textColor="#ffffffff"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+
+                            android:text="Lastname "
+                            android:backgroundTint="@color/photo_crop_highlight_color"
+                            android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                            android:gravity="left"
+                            android:textColor="#ffffffff"/>
+
+                        <EditText
+                            android:id="@+id/nomassure"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/photo_crop_highlight_color"
+                            android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                            android:gravity="left"
+                            android:textColor="#ffffffff"
+                            android:inputType="text" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+
+                            android:text="Firstname "
+                            android:backgroundTint="@color/photo_crop_highlight_color"
+                            android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                            android:gravity="left"
+                            android:textColor="#ffffffff"/>
+
+                        <EditText
+                            android:id="@+id/prenomasure"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/photo_crop_highlight_color"
+                            android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                            android:gravity="left"
+                            android:textColor="#ffffffff"
+                            android:inputType="text" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+
+                            android:text="Address "
+                            android:backgroundTint="@color/photo_crop_highlight_color"
+                            android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                            android:gravity="left"
+                            android:textColor="#ffffffff"/>
+
+                        <EditText
+                            android:id="@+id/addresseassure"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/photo_crop_highlight_color"
+                            android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                            android:gravity="left"
+                            android:textColor="#ffffffff"
+                            android:inputType="text" />
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/photo_crop_highlight_color"
+                            android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                            android:gravity="left"
+                            android:textColor="#ffffffff"
+                            android:text="Phone " />
+
+                        <EditText
+                            android:id="@+id/telassure"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+
+                            android:backgroundTint="@color/photo_crop_highlight_color"
+                            android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                            android:gravity="left"
+                            android:textColor="#ffffffff"
+                            android:inputType="phone" />
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Identity of the vehicle:"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:backgroundTint="@color/photo_crop_highlight_color"
+                        android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                        android:gravity="left"
+                        android:textColor="#ffffffff"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/textView16"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/photo_crop_highlight_color"
+                            android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                            android:gravity="left"
+                            android:text="Brand / Type "
+                            android:textColor="#ffffffff" />
+
+                        <EditText
+                            android:id="@+id/marquevoiture"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/photo_crop_highlight_color"
+                            android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                            android:gravity="left"
+                            android:textColor="#ffffffff"
+                            android:inputType="text" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Registration number "
+                            android:backgroundTint="@color/photo_crop_highlight_color"
+                            android:fontFamily="@string/fcm_fallback_notification_channel_label"
+
+                            android:textColor="#ffffffff"/>
+
+                        <EditText
+                            android:id="@+id/immatriculation"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:inputType="number"
+                            android:backgroundTint="@color/photo_crop_highlight_color"
+                            android:fontFamily="@string/fcm_fallback_notification_channel_label"
+
+                            android:textColor="#ffffffff"
+                             />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Sense followed "
+
+                            android:backgroundTint="@color/photo_crop_highlight_color"
+                            android:fontFamily="@string/fcm_fallback_notification_channel_label"
+
+                            android:textColor="#ffffffff"/>
+
+                        <EditText
+                            android:id="@+id/senssuivis"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/photo_crop_highlight_color"
+                            android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                            android:gravity="left"
+                            android:textColor="#ffffffff"
+                            android:inputType="text" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="coming from"
+                            android:backgroundTint="@color/photo_crop_highlight_color"
+                            android:fontFamily="@string/fcm_fallback_notification_channel_label"
+
+                            android:textColor="#ffffffff" />
+
+                        <EditText
+                            android:id="@+id/venantde"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/photo_crop_highlight_color"
+                            android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                            android:gravity="left"
+                            android:textColor="#ffffffff"
+                            android:inputType="text" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/textView17"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/photo_crop_highlight_color"
+                            android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                            android:gravity="left"
+                            android:text="Going to  "
+                            android:textColor="#ffffffff" />
+
+                        <EditText
+                            android:id="@+id/allanta"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/photo_crop_highlight_color"
+                            android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                            android:gravity="left"
+                            android:textColor="#ffffffff"
+                            android:inputType="text" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                        android:gravity="left"
+                        android:text="Other:"
+                        android:textColor="#ffffffff"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/photo_crop_highlight_color"
+                            android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                            android:gravity="left"
+                            android:text="obvious Damage "
+                            android:textColor="#ffffffff"
+                            android:textSize="16dp"
+                             />
+
+                        <EditText
+                            android:id="@+id/degatapparents"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/photo_crop_highlight_color"
+                            android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                            android:gravity="left"
+                            android:textColor="#ffffffff"
+                            android:inputType="text" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Observation "
+                            android:textSize="16dp"
+                            android:backgroundTint="@color/photo_crop_highlight_color"
+                            android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                            android:textColor="#ffffffff" />
+
+                        <EditText
+                            android:id="@+id/observations"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/photo_crop_highlight_color"
+                            android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                            android:gravity="left"
+                            android:textColor="#ffffffff"
+                            android:inputType="text" />
+
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnnextB"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="NEXT STEP"
+                        android:background="@drawable/custom_btn"
+                        android:textColor="#ffffff"
+                        android:textAllCaps="false"
+                        android:layout_weight="0.11"
+                        android:layout_marginBottom="15dp"/>
+
+                    <Button
+                        android:id="@+id/retour"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_btn"
+                        android:textColor="#ffffff"
+                        android:textAllCaps="false"
+                        android:text="Return" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">My Insurance</string>
+    <string name="title_activity_accueil">Accueil</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="default_notification_channel_id">Notificationssss</string>
+    default_notification_channel_id
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment 111</string>
+    <string name="title_activity_user_accueil">UserAccueil</string>
+    <string name="title_activity_admin_accueil">AdminAccueil</string>
+</resources>

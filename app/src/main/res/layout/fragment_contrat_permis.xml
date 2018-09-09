@@ -1,0 +1,132 @@
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="esprit.tn.assuranceapp.Fragments.Contrat.ContratPermisFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:backgroundTint="@color/photo_crop_highlight_color"
+            android:fontFamily="@string/fcm_fallback_notification_channel_label"
+            android:textColor="#ffffffff"
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"
+            android:text="CONTRACT"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/textViewinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.06"
+            android:gravity="center"
+            android:backgroundTint="@color/photo_crop_highlight_color"
+            android:fontFamily="@string/fcm_fallback_notification_channel_label"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:textColor="#ffffffff"
+            android:text="My license" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:backgroundTint="@color/photo_crop_highlight_color"
+                android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                android:textColor="#ffffffff"
+                android:text="License Number: " />
+
+            <EditText
+                android:id="@+id/PermisTxt1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:textColor="#ffffffff"
+                android:backgroundTint="@color/photo_crop_highlight_color"
+                android:fontFamily="@string/fcm_fallback_notification_channel_label"/>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="/ "
+                android:backgroundTint="@color/photo_crop_highlight_color"
+                android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                android:textColor="#ffffffff"/>
+
+            <EditText
+                android:id="@+id/PermisTxt2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:textColor="#ffffffff"
+                android:backgroundTint="@color/photo_crop_highlight_color"
+                android:fontFamily="@string/fcm_fallback_notification_channel_label"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:backgroundTint="@color/photo_crop_highlight_color"
+                android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                android:textColor="#ffffffff"
+                android:text="Date of issue:" />
+
+            <EditText
+                android:id="@+id/DelivrancePermis"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/photo_crop_highlight_color"
+                android:editable="false"
+                android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                android:textColor="#ffffffff" />
+
+        </LinearLayout>
+
+        <Button
+
+            android:id="@+id/bouttonPermis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NEXT STEP"
+            android:background="@drawable/custom_btn"
+            android:textColor="#ffffff"
+            android:layout_marginTop="20dp"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+</ScrollView >

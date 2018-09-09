@@ -1,0 +1,178 @@
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="esprit.tn.assuranceapp.Fragments.Contrat.ContratInfoPersoFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:textSize="20dp"
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CONTRACT"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@string/fcm_fallback_notification_channel_label"
+            android:textColor="#ffffffff"/>
+
+        <TextView
+            android:textSize="17dp"
+            android:id="@+id/textViewinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.06"
+            android:gravity="center"
+            android:fontFamily="@string/fcm_fallback_notification_channel_label"
+            android:textStyle="bold"
+            android:textColor="#ffffffff"
+            android:text="My personal information" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                android:textColor="#ffffffff"
+                android:text="Enter your Profession: " />
+
+            <EditText
+                android:id="@+id/professionTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/photo_crop_highlight_color"
+                android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                android:gravity="left"
+                android:inputType="text"
+                android:textColor="#ffffffff"
+                />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="Enter your Address : "
+                android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                android:textColor="#ffffffff"/>
+
+            <EditText
+                android:id="@+id/AdresseTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/photo_crop_highlight_color"
+                android:fontFamily="@string/fcm_fallback_notification_channel_label"
+
+                android:textColor="#ffffffff"
+                android:gravity="left" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+
+                android:id="@+id/textView19"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                android:gravity="left"
+                android:text="Enter your city: "
+                android:textColor="#ffffffff" />
+
+            <EditText
+                android:id="@+id/VilleTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:backgroundTint="@color/photo_crop_highlight_color"
+                android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                android:textColor="#ffffffff"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                android:textColor="#ffffffff"
+                android:text="Enter Your Postal Code " />
+
+            <EditText
+                android:id="@+id/CPTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:inputType="number"
+                android:backgroundTint="@color/photo_crop_highlight_color"
+                android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                android:textColor="#ffffffff"/>
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/bouttonContrat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NEXT STEP"
+
+            android:background="@drawable/custom_btn"
+            android:textColor="#ffffff"
+            android:layout_marginTop="20dp"
+            />
+    </LinearLayout>
+</ScrollView >

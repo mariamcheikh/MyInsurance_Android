@@ -1,0 +1,99 @@
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="esprit.tn.assuranceapp.Fragments.Contrat.TermesFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/textView"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@string/fcm_fallback_notification_channel_label"
+            android:text="Contract"
+            android:textColor="#ffffffff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.06"
+            android:fontFamily="@string/fcm_fallback_notification_channel_label"
+            android:gravity="center"
+            android:text="Terms and conditions"
+            android:textColor="#ffffffff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                android:gravity="center"
+
+                android:text="MODEL OF LICENSE OF USE OF A PROGRAMMABLE that can be annexed to a purchase order under the qualification of general conditions
+                 ARTICLE 1- Purpose of these general conditions
+                  The present general terms and conditions are intended to specify the conditions in which the SUPPLIER concedes to the USE in right of use of the PROGICIEL and ensures my maintenance of the PROGICIEL
+                 ARTICLE 2- Use of PROGICIE
+       the SOFTWARE is addressed to users [Confirmed or not, specify the type of infromatic solutions etc ...] the USER has tested the PROGICIEL before the signiature of the purchase order "
+                android:textColor="#ffffffff" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/RefuserConditions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_btn"
+                android:text="Refuse"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/AccepterConditions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_btn"
+                android:text="Accept"
+                android:textColor="#ffffff" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView >

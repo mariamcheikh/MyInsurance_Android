@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/getSign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/custom_btn"
+        android:textColor="#ffffff"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:text="Draw The Accident" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+            android:layout_weight="9"
+        />
+
+    <Button
+        android:id="@+id/submitcroquit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="SUBMIT"
+        android:textStyle="bold"
+        android:background="@drawable/custom_btn"
+        android:textColor="#ffffff"
+        android:textAllCaps="false"/>
+
+</LinearLayout>

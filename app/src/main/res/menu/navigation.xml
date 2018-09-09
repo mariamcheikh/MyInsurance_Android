@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="E-Contrat" />
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/constat_logo"
+        android:title="E-Constat" />
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/sos_logo"
+        android:title="SOS" />
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/profile"
+        android:title="Profil" />
+
+</menu>

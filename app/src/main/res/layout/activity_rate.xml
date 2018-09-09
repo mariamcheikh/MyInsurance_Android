@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="esprit.tn.assuranceapp.RateActivity"
+    android:orientation="vertical"
+    android:background="@drawable/constat1"
+    >
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please give your opinion about the driver:"
+        android:fontFamily="@string/fcm_fallback_notification_channel_label"
+        android:textColor="#ffffffff"
+        android:textSize="20dp"
+
+
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+
+        android:textAlignment="center"
+        />
+
+
+    <RatingBar
+        android:layout_marginTop="50dp"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:buttonTint="#ffffffff"
+        android:layout_gravity="center"
+        />
+    <Button
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_gravity="center"
+        />
+
+</LinearLayout>

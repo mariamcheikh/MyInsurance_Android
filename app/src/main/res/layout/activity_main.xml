@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="esprit.tn.assuranceapp.MainActivity"
+    android:background="@drawable/bg"    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Insurance"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:layout_marginTop="100dp"
+        />
+    <LinearLayout
+        android:id="@+id/LinearLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="11dp"
+        android:padding="50dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true">
+
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:fontFamily="@string/fcm_fallback_notification_channel_label"
+            android:textColor="#ffffffff"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:id="@+id/editTextUsername"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="3dp"
+            android:alpha="0.23"
+            android:background="@drawable/rounded_edittext"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="Enter Your Username"
+            android:paddingStart="5dp"
+            android:textColor="#000000"
+            android:textColorHint="#000000" />
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:textColor="#ffffffff"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:fontFamily="@string/fcm_fallback_notification_channel_label"
+            android:text="Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:paddingStart="5dp"
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="3dp"
+            android:alpha="0.23"
+            android:background="@drawable/rounded_edittext"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="Enter your password"
+            android:inputType="textPassword"
+            android:textColorHint="#000000"
+
+            />
+
+        <Button
+            android:layout_marginTop="25dp"
+            android:text="Login"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/buttonLogin"
+            android:background="@drawable/custom_btn"
+            android:textColor="#ffffff"
+            android:textAllCaps="false"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/LinearLayout"
+        android:gravity="center"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/txtR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You don't have an account yet ?"
+                android:textColor="#ffffff"
+                android:layout_below="@id/LinearLayout"
+                />
+            <TextView
+                android:id="@+id/textViewRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:text="Register"
+                android:textColor="#01B0F0"
+                android:layout_below="@id/txtR"
+                android:textSize="18dp"
+
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

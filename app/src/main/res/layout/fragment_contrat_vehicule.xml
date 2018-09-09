@@ -1,0 +1,320 @@
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="esprit.tn.assuranceapp.Fragments.Contrat.ContratVehiculeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:backgroundTint="@color/photo_crop_highlight_color"
+            android:fontFamily="@string/fcm_fallback_notification_channel_label"
+            android:textColor="#ffffffff"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="Contract" />
+
+        <TextView
+            android:id="@+id/textViewinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.06"
+            android:backgroundTint="@color/photo_crop_highlight_color"
+            android:fontFamily="@string/fcm_fallback_notification_channel_label"
+            android:gravity="center"
+            android:text="My new vehicle"
+            android:textColor="#ffffffff"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.20"
+                android:backgroundTint="@color/photo_crop_highlight_color"
+                android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                android:textColor="#ffffffff"
+                android:gravity="left"
+                android:text="Energy: " />
+
+            <RadioGroup
+                android:id="@+id/radioGroupe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/Diesel"
+                    android:checked="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:backgroundTint="@color/photo_crop_highlight_color"
+                    android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                    android:textColor="#ffffffff"
+                    android:buttonTint="#ffffffff"
+                    android:text="Diesel" />
+
+                <RadioButton
+                    android:id="@+id/Essence"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:backgroundTint="@color/photo_crop_highlight_color"
+                    android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                    android:textColor="#ffffffff"
+                    android:buttonTint="#ffffffff"
+                    android:text="gasoline" />
+
+                <RadioButton
+                    android:id="@+id/GPL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:backgroundTint="@color/photo_crop_highlight_color"
+                    android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                    android:textColor="#ffffffff"
+                    android:buttonTint="#ffffffff"
+                    android:text="LPG" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:backgroundTint="@color/photo_crop_highlight_color"
+                android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                android:textColor="#ffffffff"
+                android:text="Brand: " />
+
+            <EditText
+                android:id="@+id/Marque"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/photo_crop_highlight_color"
+                android:fontFamily="@string/fcm_fallback_notification_channel_label"
+
+                android:textColor="#ffffffff"
+                android:gravity="left" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:backgroundTint="@color/photo_crop_highlight_color"
+                android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                android:textColor="#ffffffff"
+                android:text="Model: " />
+
+            <EditText
+                android:id="@+id/Modele"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/photo_crop_highlight_color"
+                android:fontFamily="@string/fcm_fallback_notification_channel_label"
+
+                android:textColor="#ffffffff"
+                android:gravity="left" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:backgroundTint="@color/photo_crop_highlight_color"
+                android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                android:textColor="#ffffffff"
+                android:text="Fiscal power car: " />
+
+            <EditText
+                android:id="@+id/CV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:backgroundTint="@color/photo_crop_highlight_color"
+                android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                android:textColor="#ffffffff"
+                android:gravity="left" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <TextView
+
+                android:id="@+id/textView21"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.16"
+                android:backgroundTint="@color/photo_crop_highlight_color"
+                android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                android:gravity="left"
+                android:text="vehicle registration: "
+                android:textColor="#ffffffff" />
+
+            <EditText
+                android:id="@+id/immatriculation1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:backgroundTint="@color/photo_crop_highlight_color"
+                android:fontFamily="@string/fcm_fallback_notification_channel_label"
+
+                android:textColor="#ffffffff"
+                android:gravity="left" />
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.67"
+                android:gravity="center"
+                android:backgroundTint="@color/photo_crop_highlight_color"
+                android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                android:textColor="#ffffffff"
+                android:text="TUN: " />
+
+            <EditText
+                android:id="@+id/immatriculation2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/photo_crop_highlight_color"
+                android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                android:inputType="number"
+                android:textColor="#ffffffff"
+                android:gravity="left" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+
+                android:id="@+id/textView22"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/photo_crop_highlight_color"
+                android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                android:gravity="left"
+                android:text="Date of circulation: "
+                android:textColor="#ffffffff" />
+
+            <EditText
+                android:id="@+id/dateCirculation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/photo_crop_highlight_color"
+                android:fontFamily="@string/fcm_fallback_notification_channel_label"
+
+                android:textColor="#ffffffff"
+                android:editable="false"
+                android:gravity="left" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:backgroundTint="@color/photo_crop_highlight_color"
+                android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                android:textColor="#ffffffff"
+                android:text="Serial number: " />
+
+            <EditText
+                android:id="@+id/numSerie"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:backgroundTint="@color/photo_crop_highlight_color"
+                android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                android:textColor="#ffffffff"
+                android:gravity="left" />
+        </LinearLayout>
+
+       <Button
+            android:id="@+id/bouttonVehicule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Etape Suivante"
+            android:background="@drawable/custom_btn"
+            android:textColor="#ffffff"
+            android:layout_marginTop="20dp" />
+
+    </LinearLayout>
+
+</ScrollView >

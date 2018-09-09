@@ -1,0 +1,282 @@
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="esprit.tn.assuranceapp.Fragments.Contrat.GarantiesFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contrat"
+            android:gravity="center"
+            android:fontFamily="@string/fcm_fallback_notification_channel_label"
+            android:textColor="#ffffffff"
+            android:textSize="25dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/textViewinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.06"
+            android:gravity="center"
+            android:fontFamily="@string/fcm_fallback_notification_channel_label"
+            android:textColor="#ffffffff"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text=" My Guarantees" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                android:textColor="#ffffffff"
+                android:text="Insurance requested: " />
+
+            <RadioGroup
+                android:buttonTint="#ffffffff"
+                android:id="@+id/radioGroupeGaranties"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/tousRisque"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:checked="true"
+                    android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                    android:textColor="#ffffffff"
+                    android:buttonTint="#ffffffff"
+                    android:text="all Risk" />
+
+
+                <RadioButton
+                    android:id="@+id/Dommage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                    android:textColor="#ffffffff"
+                    android:buttonTint="#ffffffff"
+                    android:text="Damage / Collision" />
+            </RadioGroup>
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                android:textColor="#ffffffff"
+                android:text="Covers requested:" />
+
+            <Switch
+                android:id="@+id/ResposabiliteCiviles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:buttonTint="#ffffffff"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                android:textColor="#ffffffff"
+                android:text="Defense and appeals: " />
+
+            <Switch
+                android:id="@+id/Defenceetrecours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:buttonTint="#ffffffff"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="stealing: "
+                android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                android:textColor="#ffffffff"/>
+
+            <CheckBox
+                android:id="@+id/vol"
+                android:buttonTint="#ffffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                android:textColor="#ffffffff"
+                android:text="Fire: " />
+
+            <CheckBox
+                android:id="@+id/Incendie"
+                android:buttonTint="#ffffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="GOLD towing assistance: "
+                android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                android:textColor="#ffffffff"/>
+
+            <CheckBox
+                android:id="@+id/GOLD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#ffffffff"
+                android:gravity="right" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="broken glass"
+                android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                android:textColor="#ffffffff"/>
+
+            <CheckBox
+                android:id="@+id/glaces"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#ffffffff"
+                android:gravity="right" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="Driver Safety "
+                android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                android:textColor="#ffffffff"/>
+
+            <CheckBox
+                android:id="@+id/securiteconducteur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#ffffffff"
+                android:gravity="right" />
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/bouttonGaranties"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NEXT STEP"
+            android:background="@drawable/custom_btn"
+            android:textColor="#ffffff"
+            android:layout_marginTop="20dp" />
+
+    </LinearLayout>
+
+</ScrollView >

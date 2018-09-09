@@ -1,0 +1,223 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="esprit.tn.assuranceapp.Fragments.Constat.Constat1Fragment"
+    android:background="@drawable/bg">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Accident Report"
+            android:textColor="#ffffffff"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                android:textColor="#ffffffff"
+                android:text="Enter the date of the accident: " />
+
+            <EditText
+                android:id="@+id/dateTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:editable="false"
+                android:gravity="left"
+                android:textColor="#ffffffff"
+                android:backgroundTint="@color/photo_crop_highlight_color"
+                android:fontFamily="@string/fcm_fallback_notification_channel_label"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="Enter the hour of the accident:  "
+                android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                android:textColor="#ffffffff"/>
+
+            <EditText
+                android:id="@+id/heure"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:editable="false"
+                android:textColor="#ffffffff"
+                android:backgroundTint="@color/photo_crop_highlight_color"
+                android:fontFamily="@string/fcm_fallback_notification_channel_label"
+
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                android:textColor="#ffffffff"
+                android:text="Enter the place of the accident:  " />
+
+            <EditText
+                android:id="@+id/lieu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="text"
+                android:textColor="#ffffffff"
+                android:backgroundTint="@color/photo_crop_highlight_color"
+                android:fontFamily="@string/fcm_fallback_notification_channel_label"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="Injured (even slight): "
+                android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                android:textColor="#ffffffff"/>
+
+
+            <Switch
+                android:id="@+id/blesse"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textOff="OFF"
+                android:buttonTint="#ffffffff"
+                android:textOn="ON" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                android:textColor="#ffffffff"
+                android:text="Materiel damage (other than vehicles A and B): " />
+
+
+            <Switch
+                android:id="@+id/degat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textOff="OFF"
+                android:buttonTint="#ffffffff"
+                android:textOn="ON" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                android:textColor="#ffffffff"
+                android:text="Name and first name of witnesse" />
+
+            <EditText
+                android:id="@+id/temoins"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#ffffffff"
+                android:backgroundTint="@color/photo_crop_highlight_color"
+                android:fontFamily="@string/fcm_fallback_notification_channel_label"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+
+            <Button
+                android:id="@+id/next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/custom_btn"
+                android:text="NEXT STEP"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:layout_weight="0.5" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>
